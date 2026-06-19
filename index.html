@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maru & Fede — 25 de Septiembre 2026</title>
+  <meta name="description" content="¡Nos casamos! Te invitamos a celebrar con nosotros el 25 de septiembre de 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card">
+
+      <!-- 1. Hero -->
+      <section class="hero">
+        <img src="assets/foto-pareja.jpg" alt="Maru y Fede" class="hero-img">
+        <img src="assets/maru-fede-logo.png" alt="Maru & Fede" class="hero-logo">
+      </section>
+
+      <!-- 2. Intro -->
+      <section class="intro">
+        <img src="assets/sprig.png" alt="" class="sprig">
+        <p class="intro-label">¡Nos casamos!</p>
+        <img src="assets/text-fecha.png" alt="25 de Septiembre" class="fecha-img">
+        <p class="intro-text">¡Nos hace muy felices poder compartir este momento tan lindo con ustedes!</p>
+      </section>
+
+      <!-- 3. Countdown -->
+      <section class="countdown-section">
+        <img src="assets/text-faltan.png" alt="FALTAN" class="faltan-img">
+        <div class="countdown">
+          <div class="countdown-unit">
+            <span class="countdown-num" id="days">--</span>
+            <span class="countdown-label">DÍAS</span>
+          </div>
+          <span class="countdown-sep">:</span>
+          <div class="countdown-unit">
+            <span class="countdown-num" id="hours">--</span>
+            <span class="countdown-label">HORAS</span>
+          </div>
+          <span class="countdown-sep">:</span>
+          <div class="countdown-unit">
+            <span class="countdown-num" id="minutes">--</span>
+            <span class="countdown-label">MIN</span>
+          </div>
+          <span class="countdown-sep">:</span>
+          <div class="countdown-unit">
+            <span class="countdown-num" id="seconds">--</span>
+            <span class="countdown-label">SEG</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Lugar -->
+      <section class="lugar">
+        <div class="lugar-content">
+          <span class="section-label">Lugar</span>
+          <h2 class="section-title">Espacio PK</h2>
+          <p class="section-subtitle">Salón Establo - 16.30hs</p>
+          <p class="section-text">Ruta 192 y Callejón de los Japoneses, Capilla del Señor.</p>
+          <a href="https://www.google.com/maps/place/Espacio+PK+Establo/data=!4m2!3m1!1s0x0:0xce69798a50b7e448?sa=X&ved=1t:2428&ictx=111" target="_blank" rel="noopener" class="btn">Cómo llegar</a>
+        </div>
+        <img src="assets/foto-salon.jpg" alt="Espacio PK - Salón Establo" class="lugar-foto">
+      </section>
+
+      <!-- 5. Dress Code -->
+      <section class="dresscode">
+        <span class="section-label">Dress Code</span>
+        <h2 class="section-title">Elegante</h2>
+        <p class="section-text">La ceremonia será al aire libre, al atardecer, y después seguiremos de fiesta hasta tarde. El dress code es elegante, pero por sobre todo, queremos que se sientan cómodos para disfrutar y bailar toda la noche.</p>
+        <img src="assets/flores-dresscode.png" alt="" class="flores-dresscode">
+      </section>
+
+      <!-- 6. RSVP -->
+      <section class="rsvp">
+        <div class="rsvp-foto-wrap">
+          <img src="assets/foto-perro.jpg" alt="Milka" class="rsvp-foto">
+          <div class="rsvp-foto-overlay">
+            <img src="assets/text-papis.png" alt="Mis papis se casan, ¿Te lo vas a perder?" class="papis-img">
+          </div>
+        </div>
+        <div class="rsvp-content">
+          <span class="section-label">RSVP</span>
+          <h2 class="section-title">¡Esperamos que puedas acompañarnos!</h2>
+          <p class="section-text">Por favor, completá el formulario para confirmar tu asistencia.</p>
+          <a href="#" target="_blank" rel="noopener" class="btn">Confirmar</a>
+        </div>
+      </section>
+
+      <!-- 7. Regalo -->
+      <section class="regalo">
+        <div class="regalo-card">
+          <img src="assets/text-presencia.png" alt="Tu presencia es más que suficiente" class="presencia-img">
+          <svg class="corazon" width="21" height="20" viewBox="0 0 21 20" fill="none"><path d="M10.5 18.35l-1.45-1.32C3.9 12.36 1 9.78 1 6.5 1 3.42 3.42 1 6.5 1c1.74 0 3.41.81 4.5 2.09C12.09 1.81 13.76 1 15.5 1 18.58 1 21 3.42 21 6.5c0 3.28-2.9 5.86-8.05 10.54L10.5 18.35z" fill="#F6F3E3"/></svg>
+          <p class="regalo-text">De verdad, lo que más nos hace felices es poder celebrar este día junto a ustedes. Pero si además desean hacernos un regalo, pueden colaborar con nuestra luna de miel.</p>
+          <button class="btn btn-on-green" id="btn-regalo">Ver datos regalo</button>
+        </div>
+      </section>
+
+      <!-- 8. Hospedajes -->
+      <section class="hospedajes">
+        <span class="section-label">Hospedajes</span>
+        <h2 class="section-title">Lugares cercanos donde podés descansar post fiesta</h2>
+        <div class="lista">
+          <div class="lista-item">
+            <span class="lista-nombre">La Martinetta</span>
+            <a href="tel:+542323492063" class="lista-tel">Tel: +54 2323 49 2063</a>
+          </div>
+          <div class="lista-item">
+            <span class="lista-nombre">Cabañas Campo Alto</span>
+            <a href="tel:+541161317475" class="lista-tel">Tel: 11 6131 7475</a>
+          </div>
+          <div class="lista-item">
+            <span class="lista-nombre">Cabañas Lilly Bee</span>
+            <a href="tel:+5491150484264" class="lista-tel">Tel: +54 9 11 5048 4264</a>
+          </div>
+          <div class="lista-item">
+            <span class="lista-nombre">Camberland</span>
+            <a href="tel:+5402304499111" class="lista-tel">Tel: 0230 4499 111/110</a>
+          </div>
+          <div class="lista-item">
+            <span class="lista-nombre">Hilton Pilar</span>
+            <a href="tel:+5402304533800" class="lista-tel">Tel: 0230 453 3800</a>
+          </div>
+          <div class="lista-item">
+            <span class="lista-nombre">Sofitel Cardales</span>
+            <a href="tel:+543489435555" class="lista-tel">Tel: +54 3489 43 5555</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. Traslados -->
+      <section class="traslados">
+        <span class="section-label">Traslados</span>
+        <h2 class="section-title">Combis y micros</h2>
+        <div class="lista">
+          <div class="lista-item">
+            <span class="lista-nombre">Lichabus</span>
+            <a href="tel:+541153078673" class="lista-tel">Tel: +54 11 530 78673</a>
+          </div>
+          <div class="lista-item">
+            <span class="lista-nombre">Boomerang</span>
+            <a href="tel:+5411698660059" class="lista-tel">Tel: +54 11 15 698660059</a>
+          </div>
+          <div class="lista-item">
+            <span class="lista-nombre">Bellardinelli viajes</span>
+            <a href="tel:+541144011600" class="lista-tel">Tel: +54 1144011600</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. Cierre -->
+      <section class="cierre">
+        <div class="cierre-card">
+          <img src="assets/ya-queremos.png" alt="¡Ya queremos celebrar con ustedes!" class="ya-queremos-img">
+          <img src="assets/copita.png" alt="" class="copita">
+          <p class="cierre-text">Por favor confirmar asistencia antes del 1 de Septiembre. ¡Ante cualquier consulta, no duden en escribirnos!</p>
+          <p class="cierre-phones">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F6F3E3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            11 6422 7911 / 11 5741 7676
+          </p>
+          <a href="#" target="_blank" rel="noopener" class="btn btn-on-green">Confirmar asistencia</a>
+        </div>
+      </section>
+
+      <!-- 11. Logo final -->
+      <section class="logo-final">
+        <img src="assets/maru-fede-verde.png" alt="Maru & Fede" class="logo-verde">
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Modal Regalo -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <h3 class="modal-title">Datos para tu regalo</h3>
+      <p class="modal-subtitle">Cualquier monto es bienvenido con mucho cariño</p>
+
+      <div class="modal-cuenta">
+        <span class="modal-cuenta-header">CUENTA EN PESOS</span>
+        <div class="modal-row">
+          <div class="modal-field">
+            <span class="modal-field-label">ALIAS</span>
+            <span class="modal-field-value">lescano.marina.mp</span>
+          </div>
+          <button class="modal-copy" data-copy="lescano.marina.mp">Copiar</button>
+        </div>
+        <div class="modal-row">
+          <div class="modal-field">
+            <span class="modal-field-label">CVU</span>
+            <span class="modal-field-value modal-field-mono">0000003100090103474730</span>
+          </div>
+          <button class="modal-copy" data-copy="0000003100090103474730">Copiar</button>
+        </div>
+      </div>
+
+      <div class="modal-cuenta">
+        <span class="modal-cuenta-header">CUENTA EN DÓLARES</span>
+        <div class="modal-row">
+          <div class="modal-field">
+            <span class="modal-field-label">ALIAS</span>
+            <span class="modal-field-value">quien.avenida.telar</span>
+          </div>
+          <button class="modal-copy" data-copy="quien.avenida.telar">Copiar</button>
+        </div>
+        <div class="modal-row">
+          <div class="modal-field">
+            <span class="modal-field-label">CBU</span>
+            <span class="modal-field-value modal-field-mono">3220001888092791810016</span>
+          </div>
+          <button class="modal-copy" data-copy="3220001888092791810016">Copiar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
